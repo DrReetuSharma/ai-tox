@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-AI-Tox: AI-Powered Toxicity Mapping
-AI-Tox is an AI-powered tool designed to predict the toxicity of chemical compounds based on their SMILES (Simplified Molecular Input Line Entry System) representations. By leveraging machine learning models like ChemBERTa, this tool helps researchers and scientists assess the potential toxic effects of molecules, aiding in the early stages of drug discovery, environmental safety assessments, and more.
+
 
 Key Features:
 =======
@@ -8,7 +6,7 @@ Key Features:
 ### AI-Tox is an AI-powered tool designed to predict the toxicity of chemical compounds based on their SMILES (Simplified Molecular Input Line Entry System) representations. By leveraging machine learning models like ChemBERTa, this tool helps researchers and scientists assess the potential toxic effects of molecules, aiding in the early stages of drug discovery, environmental safety assessments, and more.
 
 #### Key Features:
->>>>>>> 585a097a50ecd12f9b6e60915adb4271e2978bca
+
 Machine Learning-Driven: Uses state-of-the-art AI models (like ChemBERTa and RandomForest) to classify toxicity.
 
 Comprehensive Toxicity Classification: Predicts various toxicity types including hepatotoxicity, nephrotoxicity, and others.
@@ -19,22 +17,22 @@ User-Friendly Interface: Simple interface for inputting SMILES strings of molecu
 
 Downloadable Results: Download toxicity predictions in a tabular format for further analysis.
 
-<<<<<<< HEAD
+
 How It Works:
 =======
 #### How It Works:
->>>>>>> 585a097a50ecd12f9b6e60915adb4271e2978bca
+
 Input: Users input a molecule's SMILES string into the provided input field.
 
 Processing: The app processes the SMILES string through a pre-trained machine learning model.
 
 Output: The app returns the predicted toxicity class, such as Hepatotoxicity, Genotoxicity, and more, along with confidence scores.
 
-<<<<<<< HEAD
+
 Requirements:
 =======
 ##### Requirements:
->>>>>>> 585a097a50ecd12f9b6e60915adb4271e2978bca
+
 Python 3.10 or higher
 
 Gradio for the interactive web interface
