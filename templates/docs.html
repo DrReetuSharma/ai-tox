@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ai-tox Documentation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4a90e2;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        .contact {
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🧬 ai-tox: AI-Powered Toxicity Mapping</h1>
+    <h2>Predict the toxicity of chemical compounds using the latest AI models.</h2>
+
+    <div class="section">
+        <h2>✅ Input Format</h2>
+        <p>Upload a CSV file named <code>input_smiles.csv</code> containing:</p>
+        <ul>
+            <li><strong>First column:</strong> <code>id</code> — unique molecule identifier</li>
+            <li><strong>Second column:</strong> <code>smiles</code> — SMILES notation of the molecule</li>
+            <li><strong>Remaining columns (optional):</strong> molecular descriptors</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📊 Output Details</h2>
+        <p>The app predicts the probability of toxicity across 12 Tox21 endpoints, including:</p>
+        <ul>
+            <li>NR-AR</li>
+            <li>NR-AR-LBD</li>
+            <li>NR-AhR</li>
+            <li>NR-Aromatase</li>
+            <li>NR-ER</li>
+            <li>NR-ER-LBD</li>
+            <li>NR-PPAR-gamma</li>
+            <li>SR-ARE</li>
+            <li>SR-ATAD5</li>
+            <li>SR-HSE</li>
+            <li>SR-MMP</li>
+            <li>SR-p53</li>
+        </ul>
+        <p>Results are shown in a table and can be downloaded as a CSV file.</p>
+    </div>
+
+    <div class="section">
+        <h2>💡 Use Case & Impact</h2>
+        <p>This app provides a rapid AI-powered prediction of chemical toxicity. It supports early-stage screening of drug-like molecules to reduce the risk of adverse effects, streamline R&D, and enable safer molecule prioritization in pharmaceutical or environmental research.</p>
+    </div>
+
+    <div class="section">
+        <h2>🔬 Explanation of Toxicity Types</h2>
+        <p>Here is a brief overview of the different toxicity types predicted by the app:</p>
+        <ul>
+            <li><strong>NR-AR (Nuclear Receptor Androgen Receptor):</strong> Measures the ability of a compound to interact with the androgen receptor, potentially disrupting male hormonal balance.</li>
+            <li><strong>NR-AR-LBD (Nuclear Receptor Androgen Receptor Ligand Binding Domain):</strong> Focuses on how a compound interacts with the ligand-binding domain of the androgen receptor, influencing male reproductive systems.</li>
+            <li><strong>NR-AhR (Nuclear Receptor Aryl Hydrocarbon Receptor):</strong> Indicates the potential of a compound to affect immune response and increase cancer risk.</li>
+            <li><strong>NR-Aromatase (Aromatase Enzyme):</strong> Evaluates the impact of a compound on the aromatase enzyme, which regulates estrogen levels, important for both male and female reproductive health.</li>
+            <li><strong>NR-ER (Nuclear Receptor Estrogen Receptor):</strong> Assesses whether a compound can bind to estrogen receptors, potentially affecting female reproductive health and increasing cancer risk.</li>
+            <li><strong>NR-ER-LBD (Nuclear Receptor Estrogen Receptor Ligand Binding Domain):</strong> Focuses on how compounds interact with the ligand-binding domain of estrogen receptors.</li>
+            <li><strong>NR-PPAR-gamma (Peroxisome Proliferator-Activated Receptor Gamma):</strong> Measures a compound's effect on metabolic regulation and fat storage.</li>
+            <li><strong>SR-ARE (Stress Response-Antioxidant Response Element):</strong> Evaluates a compound’s effect on cellular stress response and antioxidant pathways.</li>
+            <li><strong>SR-ATAD5 (Stress Response-ATAD5):</strong> Examines how a compound may influence DNA repair mechanisms and stress response related to the ATAD5 protein.</li>
+            <li><strong>SR-HSE (Heat Shock Element):</strong> Measures the impact of a compound on heat shock proteins, which help cells respond to stress.</li>
+            <li><strong>SR-MMP (Stress Response-Mitochondrial Membrane Potential):</strong> Assesses a compound’s effect on mitochondrial function and cellular energy production.</li>
+            <li><strong>SR-p53 (Stress Response-p53):</strong> Focuses on the compound’s potential to impact p53, a crucial protein for controlling cell cycle and tumor suppression.</li>
+        </ul>
+    </div>
+
+    <a href="/" class="button">⬅️ Back to App</a>
+
+    <div class="contact">
+        <p>📩 Contact: <a href="mailto:sharmar@aspire10x.com">sharmar@aspire10x.com</a></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+# Use the official Python 3.10 slim image as a base
+FROM python:3.10-slim
+
+# Set environment variables to prevent Python from writing pyc files to disc
+ENV PYTHONDONTWRITEBYTECODE 1
+# Set environment variables to ensure output is not buffered
+ENV PYTHONUNBUFFERED 1
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Install necessary dependencies for your app
+COPY requirements.txt /app/
+
+# Install dependencies, including gunicorn
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install gunicorn  # Install Gunicorn server
+
+# Copy the entire application into the container
+COPY . /app/
+
+# Expose port 8080 for the app
+EXPOSE 8080
+
+# Use Gunicorn to run the Flask app, binding to port 8080
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "app:app"]

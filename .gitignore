@@ -1,0 +1,36 @@
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore environment configuration files
+*.env
+*.venv
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+*.swp
+*.sublime-workspace
+*.sublime-project
+
+# Ignore logs, databases, and other temporary files
+*.log
+*.sqlite3
+*.db
+
+# Ignore distribution, build, and egg files
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# Ignore Gradio session files
+*.gradio/
+
+# Ignore system files
+*.DS_Store
